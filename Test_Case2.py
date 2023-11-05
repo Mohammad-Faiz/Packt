@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import Select
 import time
 
 #driver
@@ -26,3 +27,24 @@ time.sleep(2)
 driver.find_element_by_xpath("//*[@id='login-form']/form/button[1]/span").click()
 time.sleep(5)
 print("Logged in successfully")
+
+
+# #verifying top navigation bar(My library)
+
+iframe = driver.find_element_by_xpath("/html/body/noscript/text()")
+driver.switch_to.frame(iframe) 
+print("successfully switched")
+
+
+# element=driver.find_element_by_id("library-dropdown")
+# drp=Select(element)
+# print(drp)
+
+drp.select_by_visible_text('Home').click()
+drop_down_title=driver.title
+if drop_down_title=="Home":
+    print("Home title matched")
+else:
+    print("Incorrecct Title")
+
+
