@@ -1,11 +1,20 @@
 # Packt
 Automation Test cases for Packt.
 <br>
-In this repo, I'm creating some test cases bases on scenarios.
+In this repo, I'have created some test cases bases on scenarios.
+<br>
+Using selenium with Python 
 
-Test Case 1:
-I have completed login of page successfully.
-I have completed Test case 1 successfully.
+<br>
+<h4>Test Case 1:</h4>
+Imported all the required libraries
+Completed login of page successfully.
+Verified title of the page succcessfully.
+Verifying color of background.
+Verified text.
+Verified Posititon of the element.
+
+
 
 Test Case 2:
 I have completed login of page successfully.
