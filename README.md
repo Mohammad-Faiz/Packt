@@ -18,19 +18,18 @@ Verifying color of background.
 Verified text.
 <br>
 Verified Posititon of the element.
-
 <br>
 
-Test Case 2:
+<h4>Test Case 2:</h4>
 I have completed login of page successfully.
 I have completed Test case 2 successfully..
 
 
-Test Case 3:
+<h4>Test Case 3:</h4>
 I have completed login of page successfully.
 
 
-Test Case 4:
+<h4>Test Case 4:</h4>
 I have completed login of page successfully.
 I have completed Test case 4 successfully.
 
