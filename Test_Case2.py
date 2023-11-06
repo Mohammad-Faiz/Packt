@@ -19,7 +19,7 @@ title = driver.title
 if title == "Login | Packt Subscription":
     print("Login Page loaded successfully")
 else:
-    print("Login page does not loaded successfully")
+    print("Login page not loaded")
 
 #Login to Packt
 driver.find_element_by_id("login-input-email").send_keys("faiz999888777@gmail.com")
@@ -67,7 +67,7 @@ if lib.is_enabled():
     if title == "Playlists | Packt Subscription":
         print("Playlists Page loaded successfully")
     else:
-        print("Playlists page does not loaded successfully")
+        print("Playlists page not loaded")
 else:
     print("Playlists is not enabled")
 time.sleep(10)
