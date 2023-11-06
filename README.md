@@ -6,11 +6,11 @@
 Using selenium with Python </i>
 <hr>
 
-<b>4a-Automation software and reporting:</b>
+<b>a-Automation software and reporting:</b>
 <br>
 I chose Selenium for automation, programming language as Python and software as Visual studio code because I am familiar with the mentioned language and I did all my practised on these only.
 <br><br>
-<b>4b-Installation instructions are:</b>
+<b>b-Installation instructions are:</b>
 <br>
 Download latest version of web driver of Chrome browser.
 <br>
@@ -18,12 +18,12 @@ Install python and selenium package on Visual studio code.
 <br>
 Import all the required packages mentioned on the top of code/scripts.
 <br><br>
-<b>4c-Instruction to run code:</b>
+<b>c-Instruction to run code:</b>
 I added comment for each execution for better reference.
 <br>
 Sometimes the websites take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
 <br><br>
-<b>4d-Other information.</b>
+<b>d-Other information.</b>
 <br>
 Always make sure to use latest version of Web driver.
 <br>
