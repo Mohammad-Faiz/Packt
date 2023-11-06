@@ -27,7 +27,7 @@ Sometimes the websites take more time to load, you will get run time exception a
 <br>
 Always make sure to use latest version of Web driver.
 <br>
-I completed all the Test-Cases on windows 10.
+I have completed all the Test-Cases on windows 10.
 <hr>
 
 
@@ -90,4 +90,9 @@ Selected "2021" as a Publication Year in a filter section succcessfully.
 Checked all the mentioned keywords in "Search Bar" succcessfully.
 <br>
 <hr>
+
+<address>
 Author: Mohammad Faiz
+Contact: +91 9631011108
+</address>
+
