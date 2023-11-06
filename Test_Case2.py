@@ -1,3 +1,4 @@
+#Design a test to check that the top nav bar, and their sub options go to the correct pages.
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -34,8 +35,10 @@ print("Logged in successfully")
 lib = WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.XPATH,"//a[@id='library-dropdown']")))
 if lib.is_enabled():
     lib.click()
-    print("successfully switched")
+    print("My library Drop-down selected")
     time.sleep(5)
+    
+ #click on home
     Home = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//span[normalize-space()='Home']")))
     if Home.is_enabled():
         Home.click()
@@ -44,9 +47,13 @@ if lib.is_enabled():
     if title == "Packt Subscription | Advance your knowledge in tech":
         print("Home Page loaded successfully")
     else:
-        print("Home page does not loaded successfully")
+        print("Home page not loaded")
 else:
     print("Home is not enabled")
+time.sleep(10)
+
+
+#click on Playlist
 lib = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//a[@id='library-dropdown']")))
 if lib.is_enabled():
     lib.click()
@@ -63,4 +70,84 @@ if lib.is_enabled():
         print("Playlists page does not loaded successfully")
 else:
     print("Playlists is not enabled")
+time.sleep(10)
+
+#click on Bookmarks
+lib = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//a[@id='library-dropdown']")))
+if lib.is_enabled():
+    lib.click()
+    time.sleep(5)
+    Bookmarks = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//span[normalize-space()='Bookmarks']")))
+    if Bookmarks.is_enabled():
+        Bookmarks.click()
+    title = driver.title
+    time.sleep(5)
+    print(title)
+    if title == "Bookmarks | Packt Subscription":
+        print("Bookmarks Page loaded successfully")
+    else:
+        print("Bookmarks page not loaded")
+else:
+    print("Bookmarks is not enabled")
+time.sleep(10)
+
+#click Notes
+lib = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//a[@id='library-dropdown']")))
+if lib.is_enabled():
+    lib.click()
+    time.sleep(5)
+    Notes = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//span[normalize-space()='Notes']")))
+    if Notes.is_enabled():
+        Notes.click()
+    title = driver.title
+    time.sleep(5)
+    print(title)
+    if title == "Notes | Packt Subscription":
+        print("Notes Page loaded successfully")
+    else:
+        print("Notes page not loaded")
+else:
+    print("Notes is not enabled")
+time.sleep(10)
+
+#click Owned
+lib = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//a[@id='library-dropdown']")))
+if lib.is_enabled():
+    lib.click()
+    time.sleep(5)
+    Owned = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//span[normalize-space()='Owned']")))
+    if Owned.is_enabled():
+        Owned.click()
+    title = driver.title
+    time.sleep(5)
+    print(title)
+    if title == "Owned | Packt Subscription":
+        print("Owned Page loaded successfully")
+    else:
+        print("Owned page not loaded")
+else:
+    print("Owned is not enabled")
+time.sleep(10)
+
+#click Credits
+lib = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//a[@id='library-dropdown']")))
+if lib.is_enabled():
+    lib.click()
+    time.sleep(5)
+    Credits = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//span[normalize-space()='Credits']")))
+    if Credits.is_enabled():
+        Credits.click()
+    title = driver.title
+    time.sleep(5)
+    print(title)
+    if title == "Credits | Packt Subscription":
+        print("Credits Page loaded successfully")
+    else:
+        print("Credits page not loaded")
+else:
+    print("Credits is not enabled")
+time.sleep(10)
+
+
+driver.quit()
 
