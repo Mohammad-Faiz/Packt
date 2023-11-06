@@ -1,9 +1,38 @@
 # Packt
-Automation Test cases for Packt.
+<h3>Automation Test cases for Packt.</h3>
 <br>
-In this repo, I'have created some test cases bases on scenarios.
+In this repo, I'have created some test cases based on scenarios.
 <br>
 Using selenium with Python 
+<hr>
+
+<b>4a-Reasoning for your choice of automation software and reporting:</b>
+<br>
+I chose Selenium for automation, programming language as Python and software as Visual studio code because I am familiar with the mentioned language and I did all my practised on these only.
+<br>
+<b>4b-Installation instructions are:</b>
+<br>
+Download latest version of web driver of Chrome browser.
+<br>
+Install python and selenium package on Visual studio code.
+<br>
+Import all the required packages mentioned on the top of code/scripts.
+<br>
+
+<b>4c-Instruction to run code:</b>
+I added comment for each execution for better reference.
+<br>
+Sometimes the websites take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
+<br>
+
+<b>4d-Other information you would like us to know, the more documentation the better.</b>
+<br>
+Always make sure to use latest version of Web driver.
+
+
+
+
+
 
 <br>
 <h4>Test Case 1:</h4>
