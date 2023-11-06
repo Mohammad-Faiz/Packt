@@ -18,22 +18,15 @@ Install python and selenium package on Visual studio code.
 <br>
 Import all the required packages mentioned on the top of code/scripts.
 <br>
-
 <b>4c-Instruction to run code:</b>
 I added comment for each execution for better reference.
 <br>
 Sometimes the websites take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
 <br>
-
 <b>4d-Other information you would like us to know, the more documentation the better.</b>
 <br>
 Always make sure to use latest version of Web driver.
-
-
-
-
-
-
+<hr>
 <br>
 <h4>Test Case 1:</h4>
 Imported all the required libraries
