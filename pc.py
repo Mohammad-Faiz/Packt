@@ -1,14 +1,3 @@
-# Design a test that will click browse In the top nav, then click view all books. 
-# This should take you to the browse page. 
-# 
-# Click to clear any filters that are already set, and then click to set the 2021 filter for publication date. 
-# Following on from this, automate a test that will type the following words into the search bar, and
-# check that all titles found include that search text. 
-# Python 
-# Paint 
-# Secure 
-# Tableau
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -41,7 +30,6 @@ time.sleep(10)
 print("Logged in successfully")
 time.sleep(5)
 
-
 #Cl̥ick browse
 driver.find_element_by_xpath("//*[@id='packt-navbar']/div[1]/a").click()
 print(driver.title) #Print title of the page
@@ -53,12 +41,12 @@ time.sleep(5)
 
 #clear filter
 driver.find_element_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[5]/div[1]/div[1]/button[1]").click()
-time.sleep(10)
+time.sleep(5)
 
 
 #select filter
 driver.find_element(By.XPATH,"/html[1]/body[1]/div[1]/div[1]/div[5]/div[1]/div[1]/button[1]").click()
-time.sleep(10)
+time.sleep(5)
 
 
 #select filter
@@ -71,7 +59,6 @@ if publication_date.is_enabled():
         year.click()
         time.sleep(5)
 
-# Check keywords in search bar
 search =['Python' ,'Paint' ,'Secure' ,'Tableau']
 for item in search:
     Searchbar = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "(//input[@name='query'])[1]")))
@@ -85,12 +72,16 @@ for item in search:
             time.sleep(5)
         Searchfilter= WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "(//input[@placeholder='Search titles …'])[2]")))
         value = Searchfilter.get_attribute("value")
-        #print(value)
+        print(value)
 
-        #comparing search result
+
+
         if value == item:
             print(item, 'Keyword applied successfully')
         else:
             print(item, " Keyword not applied")
+
+
+
 
 driver.quit()
