@@ -91,8 +91,8 @@ Checked all the mentioned keywords in "Search Bar" succcessfully.
 <br>
 <hr>
 
-<address>
+<cite>
 Author: Mohammad Faiz
 Contact: +91 9631011108
-</address>
+</cite>
 
