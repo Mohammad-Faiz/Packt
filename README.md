@@ -24,7 +24,7 @@ Always change Chrome driver path as per your system path.
 <br>
 I added comment for each execution for better reference.
 <br>
-Sometimes the websites take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
+Sometimes the website take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
 <br><br>
 <b>d-Other information.</b>
 <br>
@@ -95,7 +95,7 @@ Verified title of the page succcessfully.
 <br>
 Login to Packt successfully.
 <br>
-Cl̥icked "Browse Library" succcessfully.
+Clicked "Browse Library" succcessfully.
 <br>
 Clicked on "All Books" option succcessfully.
 <br>
