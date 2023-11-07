@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 #driver
-driver = webdriver.Chrome(executable_path="chromedriver-win64/chromedriver.exe")
+driver = webdriver.Chrome(executable_path="C:/Users/faiz/Desktop/Packt/chromedriver-win64/chromedriver.exe")
 driver.get("https://subscription.packtpub.com/login")
 
 #Verifying title of the page
@@ -25,3 +25,25 @@ time.sleep(2)
 driver.find_element_by_xpath("//*[@id='login-form']/form/button[1]/span").click()
 time.sleep(5)
 print("Logged in successfully")
+
+time.sleep(15)
+
+
+#capturing title of home page
+Home_title=driver.title
+
+#click on edit preference
+driver.find_element_by_xpath("/html/body/div[1]/div/main/section[2]/div[2]/h5/a").click()
+
+#capturing title of edit preference page
+edit_title=driver.title
+
+time.sleep(5)
+
+#compare Title of Home and Edit page
+if Home_title == edit_title:
+    print("Title Matched successfully")
+else:
+    print("Title not matched")
+
+driver.quit()
