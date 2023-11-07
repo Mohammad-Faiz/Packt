@@ -1,16 +1,16 @@
 # Packt
 <h3>Automation Test cases for Packt.</h3>
 <br>
-<i>In this repo, I'have created some test cases based on scenarios.
+<i>In this repository, I have created some test cases based on scenarios.
 <br>
-Using selenium with Python </i>
+Using selenium with Python. </i>
 <hr>
 
 <b>a-Automation software and reporting:</b>
 <br>
 I chose Selenium for automation, programming language as Python and software as Visual studio code because I am familiar with the mentioned language and I did all my practised on these only.
 <br><br>
-<b>b-Installation instructions are:</b>
+<b>b-Installation instructions:</b>
 <br>
 Download latest version of web driver of Chrome browser.
 <br>
@@ -19,9 +19,12 @@ Install python and selenium package on Visual studio code.
 Import all the required packages mentioned on the top of code/scripts.
 <br><br>
 <b>c-Instruction to run code:</b>
+<br>
+Always change Chrome driver path as per your system path.
+<br>
 I added comment for each execution for better reference.
 <br>
-Sometimes the websites take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
+Sometimes the website take more time to load, you will get run time exception as error, then we have to increase the sleep time to make sure the page is loaded properly.
 <br><br>
 <b>d-Other information.</b>
 <br>
@@ -69,6 +72,19 @@ Verified title of the page succcessfully.
 <br>
 Login to Packt successfully.
 <br>
+Fetched the title of Home page.
+<br>
+Clicked to "Edit your preference here" link.
+<br>
+Fetched the title of "Edit your preference here" page.
+<br>
+Compared both the titles successfully.
+<br>
+
+
+
+
+
 
 <h4>Test Case 4:</h4>
 Imported all the required libraries
@@ -79,7 +95,7 @@ Verified title of the page succcessfully.
 <br>
 Login to Packt successfully.
 <br>
-Cl̥icked "Browse Library" succcessfully.
+Clicked "Browse Library" succcessfully.
 <br>
 Clicked on "All Books" option succcessfully.
 <br>
