@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 #driver
-driver = webdriver.Chrome(executable_path="chromedriver-win64/chromedriver.exe")
+driver = webdriver.Chrome(executable_path="C:/Users/faiz/Desktop/Packt/chromedriver-win64/chromedriver.exe")
 driver.get("https://subscription.packtpub.com/login")
 driver.maximize_window()
 
@@ -43,7 +43,7 @@ if lib.is_enabled():
     if Home.is_enabled():
         Home.click()
     title = driver.title
-    print(title)
+    print("Home Page title = " + title)
     if title == "Packt Subscription | Advance your knowledge in tech":
         print("Home Page loaded successfully")
     else:
@@ -63,7 +63,7 @@ if lib.is_enabled():
         Playlist.click()
     title = driver.title
     time.sleep(5)
-    print(title)
+    print("Playlist Page title = " + title)
     if title == "Playlists | Packt Subscription":
         print("Playlists Page loaded successfully")
     else:
@@ -82,7 +82,7 @@ if lib.is_enabled():
         Bookmarks.click()
     title = driver.title
     time.sleep(5)
-    print(title)
+    print("Bookmarks Page title = " + title)
     if title == "Bookmarks | Packt Subscription":
         print("Bookmarks Page loaded successfully")
     else:
@@ -101,14 +101,14 @@ if lib.is_enabled():
         Notes.click()
     title = driver.title
     time.sleep(5)
-    print(title)
+    print("Notes Page title = " + title)
     if title == "Notes | Packt Subscription":
         print("Notes Page loaded successfully")
     else:
         print("Notes page not loaded")
 else:
     print("Notes is not enabled")
-time.sleep(10)
+time.sleep(15)
 
 #click Owned
 lib = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//a[@id='library-dropdown']")))
@@ -120,7 +120,7 @@ if lib.is_enabled():
         Owned.click()
     title = driver.title
     time.sleep(5)
-    print(title)
+    print("Owned Page title = " + title)
     if title == "Owned | Packt Subscription":
         print("Owned Page loaded successfully")
     else:
@@ -139,14 +139,14 @@ if lib.is_enabled():
         Credits.click()
     title = driver.title
     time.sleep(5)
-    print(title)
+    print("Credits Page title = " + title)
     if title == "Credits | Packt Subscription":
         print("Credits Page loaded successfully")
     else:
         print("Credits page not loaded")
 else:
     print("Credits is not enabled")
-time.sleep(10)
+time.sleep(15)
 
 
 driver.quit()
